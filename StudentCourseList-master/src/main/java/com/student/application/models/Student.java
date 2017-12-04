@@ -127,7 +127,7 @@ public class Student implements Serializable {
 	public boolean hasCourse(Courses courses) {
 		for (Courses studentCourse: getCourses()) {
 			if (studentCourse.getCourseId() == courses.getCourseId()) {
-				return false;
+				return true;
 			}
 		}
 		return false;
